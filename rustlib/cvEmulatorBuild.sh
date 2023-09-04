@@ -3,7 +3,7 @@
 set -e
 BASE_DIR=$(pwd)
 
-rm -rf Cargo.lock target
+
 export TOOLCHAIN="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64"
 export TARGET="x86_64-linux-android"
 export API="24"
