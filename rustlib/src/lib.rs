@@ -3,12 +3,13 @@
 
 use jni::JNIEnv;
 use jni::objects::{JClass, JString};
+use opencv::prelude::*;
 
 
 // https://doc.rust-lang.org/reference/items/external-blocks.html#abi
 #[no_mangle]
-pub extern "system" fn Java_com_os_androidrusttemplate_MainActivityKt_opencvVersion<'local>(
-     env: JNIEnv<'local>,
+pub extern "system" fn Java_com_os_androidrustcvcam_MainActivityKt_opencvVersion<'local>(
+    mut env: JNIEnv<'local>,
     _class: JClass<'local>,
 ) -> JString<'local> {
 
@@ -17,9 +18,8 @@ pub extern "system" fn Java_com_os_androidrusttemplate_MainActivityKt_opencvVers
     env.new_string(version).unwrap()
 }
 
-// https://doc.rust-lang.org/reference/items/external-blocks.html#abi
 #[no_mangle]
-pub extern "system" fn Java_com_os_androidrusttemplate_MainActivityKt_grayScale<'local>(
+pub extern "system" fn Java_com_os_androidrustcvcam_MainActivityKt_grayScale<'local>(
      env: JNIEnv<'local>,
     _class: JClass<'local>,
 ) -> JString<'local> {
