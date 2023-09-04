@@ -47,7 +47,7 @@ BASE_DIR=$(pwd)
             -DANDROID_STL="c++_static" \
             ..
 
-    make -j12
+    make -j nproc
     make install
 )
 

@@ -1,6 +1,6 @@
 #!/usr/bin/bash
-set -e
 
+set -e
 BASE_DIR=$(pwd)
 
 export TOOLCHAIN="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64"
@@ -14,4 +14,3 @@ export OPENCV_LINK_PATHS="$BASE_DIR/opencv/build-arm64-v8a/install/sdk/native/st
 export OPENCV_INCLUDE_PATHS="$BASE_DIR/opencv/build-arm64-v8a/install/sdk/native/jni/include"
 
 RUST_BACKTRACE=full cargo ndk -t arm64-v8a -o ../app/src/main/jniLibs/  build -vv --release
-#RUST_BACKTRACE=full cargo build -vv --target aarch64-linux-android

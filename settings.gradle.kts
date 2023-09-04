@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidRustTemplate"
+rootProject.name = "AndroidRustCVCam"
 include(":app")
