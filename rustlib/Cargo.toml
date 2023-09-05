@@ -3,13 +3,15 @@ name = "rustlib"
 version = "0.1.0"
 edition = "2021"
 
+
 [dependencies]
-android_logger = "0.13.3"
-jni = "0.21.1"
 log = "0.4.20"
-ndk = "0.7.0"
-ndk-sys = "0.4.1"
+jni = "0.21.1"
 opencv = { version = "0.84.5", default-features = false, features = ["imgproc", "features2d", "highgui", "photo", "video"]}
+
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.13.3"
 
 
 [lib]
