@@ -7,7 +7,7 @@ edition = "2021"
 [dependencies]
 log = "0.4.20"
 jni = "0.21.1"
-opencv = { version = "0.84.5", default-features = false, features = ["imgproc", "features2d", "highgui", "photo", "video"]}
+opencv = { version = "0.84.5", default-features = false, features = ["imgproc","imgcodecs","features2d", "highgui", "photo", "video"]}
 
 
 [target.'cfg(target_os = "android")'.dependencies]

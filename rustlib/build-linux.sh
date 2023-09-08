@@ -39,7 +39,7 @@ fi
                 -DCMAKE_INSTALL_PREFIX=$BASE_DIR/opencv/build-${i}/install \
                 -DCMAKE_BUILD_TYPE=Release \
                 -DCMAKE_SYSTEM_NAME=Android \
-                -DBUILD_LIST=core,features2d,imgproc,highgui,photo,video \
+                -DBUILD_LIST=core,features2d,imgproc,highgui,imgcodecs,photo,video \
                 -DBUILD_SHARED_LIBS=NO \
                 -DANDROID_ABI="${i}" \
                 -DANDROID_PLATFORM=android-24 \

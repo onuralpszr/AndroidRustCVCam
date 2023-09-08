@@ -16,4 +16,3 @@ pub extern "system" fn Java_com_os_androidrustcvcam_MainActivityKt_opencvVersion
     let version = opencv::core::CV_VERSION;
     env.new_string(version).unwrap()
 }
-
