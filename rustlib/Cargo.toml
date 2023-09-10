@@ -7,6 +7,8 @@ edition = "2021"
 [dependencies]
 log = "0.4.20"
 jni = "0.21.1"
+ndk-sys = "0.4.1+23.1.7779620"
+ndk = { version = "0.7", features = ["bitmap"] }
 opencv = { version = "0.84.5", default-features = false, features = ["imgproc","imgcodecs","features2d", "highgui", "photo", "video"]}
 
 
