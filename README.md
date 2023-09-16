@@ -1,6 +1,12 @@
-# Android RustCVCam
+<h1 align="center">Android RustCVCam</h1>
 
 Android's Jetpack Compose with Rust and OpenCV by using Android Camera
+
+<p>
+  <img alt="GitHub" src="https://img.shields.io/github/license/onuralpszr/AndroidRustCVCam">
+  <a href="https://conventionalcommits.org"><img alt="Conventional Commits" src="https://img.shields.io/badge/Conventional%20Commit-1.0.0-FE5196?logo=conventionalcommits&logoColor=white"></a>
+</p>
+
 
 ## Prerequisites
 
@@ -39,6 +45,7 @@ cd rustlib
 ```
 
 4. Build and run the app in Android Studio with your emulator or in device.
+
 
 ## License
 
